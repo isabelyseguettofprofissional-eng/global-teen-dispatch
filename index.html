@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
 <title>Global Teen Dispatch</title>
 
 <style>
 
 body{
-background:#f5f5f5;
+margin:0;
 font-family: Georgia, serif;
+background:white;
+color:#111;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+padding:60px 20px;
 text-align:center;
+background-image: radial-gradient(#d9d9d9 1px, transparent 1px);
+background-size:12px 12px;
+}
+
+.header h1{
+font-size:48px;
+letter-spacing:2px;
 margin:0;
 }
 
-.header{
-padding-top:120px;
-}
-
-h1{
-font-size:60px;
-}
-
-.line{
-width:50%;
+.header-line{
+width:200px;
 height:1px;
 background:black;
 margin:10px auto;
@@ -30,25 +39,163 @@ margin:10px auto;
 
 .subtitle{
 letter-spacing:4px;
-color:#555;
+color:#666;
+}
+
+/* MENU */
+
+.nav{
+text-align:center;
+padding:15px;
+border-top:1px solid #cfcfcf;
+border-bottom:1px solid #cfcfcf;
+font-family: Arial, sans-serif;
+}
+
+.nav a{
+text-decoration:none;
+color:#444;
+margin:0 15px;
+font-size:14px;
+}
+
+.nav a:not(:last-child){
+border-right:1px solid #cfcfcf;
+padding-right:15px;
+}
+
+/* ARTICLES AREA */
+
+.articles{
+background:#dfeaf2;
+padding:60px 10%;
+}
+
+/* ARTICLE */
+
+.article{
+display:flex;
+align-items:center;
+margin-bottom:80px;
+gap:40px;
+}
+
+.article:nth-child(even){
+flex-direction:row-reverse;
+}
+
+.article img{
+width:45%;
+border-radius:4px;
+transition:opacity 1s;
+}
+
+.article-text{
+width:55%;
+}
+
+.article-text h2{
+margin-top:0;
+}
+
+/* DROP CAP */
+
+.article-text p::first-letter{
+font-size:50px;
+float:left;
+line-height:1;
+padding-right:8px;
+font-weight:bold;
+color:#333;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="header">
 
-<h1>Global Teen Dispatch</h1>
+<h1>GLOBAL TEEN DISPATCH</h1>
 
-<div class="line"></div>
+<div class="header-line"></div>
 
-<p class="subtitle">JOURNAL</p>
+<div class="subtitle">JOURNAL</div>
 
 </div>
 
-</body>
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">World</a>
+<a href="#">Culture</a>
+<a href="#">Opinion</a>
+<a href="#">About</a>
+</div>
 
-</html>
+<div class="articles">
+
+<div class="article">
+
+<img id="img1" src="https://picsum.photos/600/400?1">
+
+<div class="article-text">
+<h2>Teen Life Across Different Cultures</h2>
+<p>
+Students around the world experience school, friendship and culture in very different ways. From cities to rural communities, everyday life reveals how diverse and fascinating global youth perspectives can be.
+</p>
+</div>
+
+</div>
+
+<div class="article">
+
+<img id="img2" src="https://picsum.photos/600/400?2">
+
+<div class="article-text">
+<h2>The Energy of Cities Around the World</h2>
+<p>
+Walking through international streets reveals a rhythm unique to every culture. Music, architecture and people combine to create an atmosphere that shapes how young people see the world.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+/* Image change animation */
+
+const images1 = [
+"https://picsum.photos/600/400?1",
+"https://picsum.photos/600/400?3",
+"https://picsum.photos/600/400?5"
+];
+
+const images2 = [
+"https://picsum.photos/600/400?2",
+"https://picsum.photos/600/400?4",
+"https://picsum.photos/600/400?6"
+];
+
+let i = 0;
+
+setInterval(()=>{
+i = (i+1) % images1.length;
+
+document.getElementById("img1").style.opacity=0;
+document.getElementById("img2").style.opacity=0;
+
+setTimeout(()=>{
+document.getElementById("img1").src = images1[i];
+document.getElementById("img2").src = images2[i];
+document.getElementById("img1").style.opacity=1;
+document.getElementById("img2").style.opacity=1;
+},500)
+
+},4000)
+
+</script>
+
+</body>
+  </html>
