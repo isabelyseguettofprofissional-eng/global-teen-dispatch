@@ -7,39 +7,32 @@
 <style>
 
 body{
-    background-color:#f5f5f5;
-    font-family: Georgia, serif;
-    margin:0;
-    text-align:center;
+background-color:#f3f3f3;
+font-family: Georgia, serif;
+margin:0;
+text-align:center;
 }
 
 .header{
-    padding-top:100px;
+padding-top:120px;
 }
 
 h1{
-    font-size:60px;
-    font-weight:700;
+font-size:60px;
+margin-bottom:5px;
 }
 
 .line{
-    width:60%;
-    height:1px;
-    background:black;
-    margin:10px auto;
+width:50%;
+height:1px;
+background:black;
+margin:10px auto;
 }
 
 .subtitle{
-    letter-spacing:4px;
-    color:#555;
-    font-size:14px;
-}
-
-.section{
-    background:#a9bacd;
-    height:500px;
-    margin-top:80px;
-    border-radius:40px;
+font-size:14px;
+letter-spacing:4px;
+color:#666;
 }
 
 </style>
@@ -57,8 +50,6 @@ h1{
 <p class="subtitle">JOURNAL</p>
 
 </div>
-
-<div class="section"></div>
 
 </body>
 
