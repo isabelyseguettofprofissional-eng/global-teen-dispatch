@@ -7,10 +7,10 @@
 <style>
 
 body{
-background-color:#f3f3f3;
+background:#f5f5f5;
 font-family: Georgia, serif;
-margin:0;
 text-align:center;
+margin:0;
 }
 
 .header{
@@ -19,7 +19,6 @@ padding-top:120px;
 
 h1{
 font-size:60px;
-margin-bottom:5px;
 }
 
 .line{
@@ -30,9 +29,8 @@ margin:10px auto;
 }
 
 .subtitle{
-font-size:14px;
 letter-spacing:4px;
-color:#666;
+color:#555;
 }
 
 </style>
