@@ -5,111 +5,8 @@
 <meta charset="UTF-8">
 <title>Global Teen Dispatch</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-margin:0;
-font-family: Georgia, serif;
-background:white;
-color:#111;
-}
-
-/* HEADER */
-
-.header{
-background:white;
-padding:60px 20px;
-text-align:center;
-background-image: radial-gradient(#d9d9d9 1px, transparent 1px);
-background-size:12px 12px;
-}
-
-.header h1{
-font-size:48px;
-letter-spacing:2px;
-margin:0;
-}
-
-.header-line{
-width:200px;
-height:1px;
-background:black;
-margin:10px auto;
-}
-
-.subtitle{
-letter-spacing:4px;
-color:#666;
-}
-
-/* MENU */
-
-.nav{
-text-align:center;
-padding:15px;
-border-top:1px solid #cfcfcf;
-border-bottom:1px solid #cfcfcf;
-font-family: Arial, sans-serif;
-}
-
-.nav a{
-text-decoration:none;
-color:#444;
-margin:0 15px;
-font-size:14px;
-}
-
-.nav a:not(:last-child){
-border-right:1px solid #cfcfcf;
-padding-right:15px;
-}
-
-/* ARTICLES AREA */
-
-.articles{
-background:#dfeaf2;
-padding:60px 10%;
-}
-
-/* ARTICLE */
-
-.article{
-display:flex;
-align-items:center;
-margin-bottom:80px;
-gap:40px;
-}
-
-.article:nth-child(even){
-flex-direction:row-reverse;
-}
-
-.article img{
-width:45%;
-border-radius:4px;
-transition:opacity 1s;
-}
-
-.article-text{
-width:55%;
-}
-
-.article-text h2{
-margin-top:0;
-}
-
-/* DROP CAP */
-
-.article-text p::first-letter{
-font-size:50px;
-float:left;
-line-height:1;
-padding-right:8px;
-font-weight:bold;
-color:#333;
-}
-
-</style>
 </head>
 
 <body>
@@ -162,40 +59,7 @@ Walking through international streets reveals a rhythm unique to every culture. 
 
 </div>
 
-<script>
-
-/* Image change animation */
-
-const images1 = [
-"https://picsum.photos/600/400?1",
-"https://picsum.photos/600/400?3",
-"https://picsum.photos/600/400?5"
-];
-
-const images2 = [
-"https://picsum.photos/600/400?2",
-"https://picsum.photos/600/400?4",
-"https://picsum.photos/600/400?6"
-];
-
-let i = 0;
-
-setInterval(()=>{
-i = (i+1) % images1.length;
-
-document.getElementById("img1").style.opacity=0;
-document.getElementById("img2").style.opacity=0;
-
-setTimeout(()=>{
-document.getElementById("img1").src = images1[i];
-document.getElementById("img2").src = images2[i];
-document.getElementById("img1").style.opacity=1;
-document.getElementById("img2").style.opacity=1;
-},500)
-
-},4000)
-
-</script>
+<script src="script.js"></script>
 
 </body>
-  </html>
+</html>
