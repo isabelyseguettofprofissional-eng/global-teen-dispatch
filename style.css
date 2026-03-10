@@ -1,0 +1,66 @@
+body{
+margin:0;
+background:#e3edf7;
+font-family:'Libre Baskerville', serif;
+}
+
+header{
+background:white;
+text-align:center;
+padding:30px;
+border-bottom:2px solid #d6d6d6;
+}
+
+h1{
+font-family:'Playfair Display', serif;
+font-size:50px;
+margin:0;
+}
+
+.journal{
+letter-spacing:4px;
+color:gray;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:#444;
+font-weight:bold;
+}
+
+main{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.featured{
+display:flex;
+gap:25px;
+background:#f3f6fb;
+padding:20px;
+border-radius:10px;
+}
+
+.featured img{
+width:350px;
+border-radius:6px;
+}
+
+button{
+background:#3e5c8a;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2f4a72;
+}
