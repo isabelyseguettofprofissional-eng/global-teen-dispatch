@@ -1,66 +1,91 @@
 body{
 margin:0;
-background:#e3edf7;
-font-family:'Libre Baskerville', serif;
-}
-
-header{
+font-family: Georgia, serif;
 background:white;
-text-align:center;
-padding:30px;
-border-bottom:2px solid #d6d6d6;
+color:#111;
 }
 
-h1{
-font-family:'Playfair Display', serif;
-font-size:50px;
+.header{
+background:white;
+padding:60px 20px;
+text-align:center;
+background-image: radial-gradient(#d9d9d9 1px, transparent 1px);
+background-size:12px 12px;
+}
+
+.header h1{
+font-size:48px;
+letter-spacing:2px;
 margin:0;
 }
 
-.journal{
+.header-line{
+width:200px;
+height:1px;
+background:black;
+margin:10px auto;
+}
+
+.subtitle{
 letter-spacing:4px;
-color:gray;
+color:#666;
 }
 
-nav{
-margin-top:15px;
+.nav{
+text-align:center;
+padding:15px;
+border-top:1px solid #cfcfcf;
+border-bottom:1px solid #cfcfcf;
+font-family: Arial, sans-serif;
 }
 
-nav a{
-margin:10px;
+.nav a{
 text-decoration:none;
 color:#444;
-font-weight:bold;
+margin:0 15px;
+font-size:14px;
 }
 
-main{
-max-width:1000px;
-margin:auto;
-padding:20px;
+.nav a:not(:last-child){
+border-right:1px solid #cfcfcf;
+padding-right:15px;
 }
 
-.featured{
+.articles{
+background:#dfeaf2;
+padding:60px 10%;
+}
+
+.article{
 display:flex;
-gap:25px;
-background:#f3f6fb;
-padding:20px;
-border-radius:10px;
+align-items:center;
+margin-bottom:80px;
+gap:40px;
 }
 
-.featured img{
-width:350px;
-border-radius:6px;
+.article:nth-child(even){
+flex-direction:row-reverse;
 }
 
-button{
-background:#3e5c8a;
-color:white;
-border:none;
-padding:10px 15px;
-border-radius:5px;
-cursor:pointer;
+.article img{
+width:45%;
+border-radius:4px;
+transition:opacity 1s;
 }
 
-button:hover{
-background:#2f4a72;
+.article-text{
+width:55%;
 }
+
+.article-text h2{
+margin-top:0;
+}
+
+.article-text p::first-letter{
+font-size:50px;
+float:left;
+line-height:1;
+padding-right:8px;
+font-weight:bold;
+color:#333;
+  }
